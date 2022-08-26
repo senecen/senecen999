@@ -23,6 +23,7 @@ import Server from 'bare-server-node';
 
 const bare = new Server('/bare/', '');
 
+
 const proxy = new Corrosion({
     prefix: "/corrosion/",
     codec: "xor",
