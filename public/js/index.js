@@ -1,9 +1,3 @@
-//  _____             _   _      _                      _    
-// |  ___|__   __ _  | \ | | ___| |___      _____  _ __| | __
-// | |_ / _ \ / _` | |  \| |/ _ \ __\ \ /\ / / _ \| '__| |/ /
-// |  _| (_) | (_| | | |\  |  __/ |_ \ V  V / (_) | |  |   < 
-// |_|  \___/ \__, | |_| \_|\___|\__| \_/\_/ \___/|_|  |_|\_\
-//            |___/                                          
 
 var appearance = localStorage.getItem("appearance")
 
@@ -15,10 +9,10 @@ if (localStorage.hasOwnProperty("appearance")) {
     document.getElementsByTagName("body")[0].setAttribute("appearance", "default")
 }
 
-console.log("%cTsunami", "color: " + getComputedStyle(document.body).getPropertyValue('--highlight').replaceAll(" ", "") + "; font-size: 45px")
-console.log("%cBy Fog Network", "color: " + getComputedStyle(document.body).getPropertyValue('--highlight').replaceAll(" ", "") + "; font-size: 20px")
-console.log("%chttps://discord.gg/yk33HZSZkU", "font-size: 15px")
-console.log("%chttps://github.com/FogNetwork/Tsunami", "font-size: 15px")
+console.log("%cUnbl*cked", "color: " + getComputedStyle(document.body).getPropertyValue('--highlight').replaceAll(" ", "") + "; font-size: 45px")
+console.log("%cBy aiden", "color: " + getComputedStyle(document.body).getPropertyValue('--highlight').replaceAll(" ", "") + "; font-size: 20px")
+console.log("%c", "font-size: 15px")
+console.log("%c", "font-size: 15px")
 
 var title = localStorage.getItem("title")
 var favicon = localStorage.getItem("favicon")

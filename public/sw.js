@@ -19,3 +19,6 @@ self.addEventListener('fetch', function(e) {
     })
   );
 });
+document.addEventListener("contextmenu", function (e){
+    e.preventDefault();
+}, false);

@@ -48,7 +48,7 @@ closeapp.style.display = "none";
 appframe.style.display = "none";
 reloadapp.style.display = "none";
 closeapp.setAttribute("src", "");
-navtitle.innerText = "Loading..."
+
 }
 
 function fullapp() {

@@ -99,7 +99,7 @@ surf.style.display = "none";
 closesurf.style.display = "none";
 reloadsurf.style.display = "none";
 surf.setAttribute("src", "");
-navtitle.innerText = "Loading..."
+navtitle.innerText = ""
 }
 
 function reloadsurf() {
@@ -250,7 +250,7 @@ var navicon = document.getElementById("nav-icon")
   
 if (surf.contentWindow.location.toString() == "about:blank") {
 return {
-  name : navtitle.innerText = "Loading...",
+  name : navtitle.innerText = "",
   favicon : navicon.src = ""
 };
 }

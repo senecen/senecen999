@@ -6,8 +6,8 @@ body[appearance="default"] {
 --bg-main: #121212;
 --placeholder: #666666;
 --border: #5f6368;
---font-main: Roboto;
---font-title: Quicksand;
+--font-main: Jost;
+--font-title: bold 700;
 }
 }
 
@@ -19,8 +19,8 @@ body[appearance="default"] {
 --bg-main: white;
 --placeholder: #666666;
 --border: #5f6368;
---font-main: Roboto;
---font-title: Quicksand;
+--font-main: Jost;
+--font-title: bold 700;
 }
 }
 
@@ -31,8 +31,8 @@ body[appearance="dark"] {
 --bg-main: #121212;
 --placeholder: #666666;
 --border: #5f6368;
---font-main: Roboto;
---font-title: Quicksand;
+--font-main: Jost;
+--font-title: bold 700;
 }
 
 body[appearance="light"] {
@@ -42,8 +42,8 @@ body[appearance="light"] {
 --bg-main: white;
 --placeholder: #666666;
 --border: #5f6368;
---font-main: Roboto;
---font-title: Quicksand;
+--font-main: Jost;
+--font-title: bold 700;
 }
 
 body[appearance="lime"] {

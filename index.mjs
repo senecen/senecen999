@@ -1,8 +1,3 @@
-/*
-Copyright © Fog Network
-Made by Nebelung
-MIT license: https://opensource.org/licenses/MIT
-*/
 
 import { createRequire } from "module";
 const require = createRequire(import.meta.url);
@@ -27,7 +22,7 @@ const bare = new Server('/bare/', '');
 const proxy = new Corrosion({
     prefix: "/corrosion/",
     codec: "xor",
-    title: "Tsunami",
+    title: "Unblcked",
     forceHttps: true,
     requestMiddleware: [
         Corrosion.middleware.blacklist([
@@ -43,7 +38,7 @@ const Rhodium = new RhodiumProxy({
   prefix: "/rhodium/",
   server: app,
   Corrosion: [true, proxy],
-  title: "Tsunami"
+  title: "Unblcked"
 })
 
 Rhodium.init();
@@ -102,5 +97,8 @@ app.use(function (req, res) {
 })
 
 app.listen(port, () => {
-  console.log(`Tsunami is running at localhost:${port}`)
+  console.log(`Unblcked is running at localhost:${port}`)
 })
+document.addEventListener("contextmenu", function (e){
+    e.preventDefault();
+}, false);
