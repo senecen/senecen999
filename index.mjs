@@ -1,4 +1,3 @@
-
 import { createRequire } from "module";
 const require = createRequire(import.meta.url);
 const express = require("express")
@@ -14,15 +13,14 @@ const password = config.password
 const users = {}
 users[username] = password
 const fetch = require("node-fetch");
-import Server from 'bare-server-node';
+import createServer from '@tomphttp/bare-server-node';
 
-const bare = new Server('/bare/', '');
-
+const bare = createServer('/bare/');
 
 const proxy = new Corrosion({
     prefix: "/corrosion/",
     codec: "xor",
-    title: "Unblcked",
+    title: "Tsunami",
     forceHttps: true,
     requestMiddleware: [
         Corrosion.middleware.blacklist([
@@ -38,7 +36,7 @@ const Rhodium = new RhodiumProxy({
   prefix: "/rhodium/",
   server: app,
   Corrosion: [true, proxy],
-  title: "Unblcked"
+  title: "Tsunami"
 })
 
 Rhodium.init();
@@ -97,8 +95,5 @@ app.use(function (req, res) {
 })
 
 app.listen(port, () => {
-  console.log(`Unblcked is running at localhost:${port}`)
+  console.log(`Tsunami is running at localhost:${port}`)
 })
-document.addEventListener("contextmenu", function (e){
-    e.preventDefault();
-}, false);
